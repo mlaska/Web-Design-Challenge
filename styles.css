@@ -1,0 +1,100 @@
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background: #f1f1f1;
+}
+.container-2 {
+  padding: 2%;
+  min-width: 300%;
+}
+.container {
+  padding-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h1 {
+  font-size: 400%;
+}
+h2 {
+  font-size: 200%;
+  font-weight: 100%;
+  text-align: center;
+}
+h3 {
+  font-size: 100%;
+}
+
+/* Giving our navbar some padding and a background color */
+.navbar {
+  padding: 1%;
+  background: #5191fd;
+}
+.plot-header {
+  text-align: left;
+}
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: inline-block;
+  padding: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3%;
+}
+
+/* Getting rid of the default link styles here */
+.navbar li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styling the header, giving it a height, a background color, and some top padding */
+.header {
+  text-align: left;
+  background: #fff;
+}
+img {
+max-width: 100%;
+}
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 2%;
+  margin: 0;
+  color: #000;
+  text-align: left;
+}
+.header h2 {
+  padding-left: 8%;
+  text-align: left;
+}
+/* Giving the .post element margin on 3 sides */
+.post {
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+#nav-select {
+  visibility: hidden;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 1%;
+  }
+
+  .post {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+}
